@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./sf\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.nav-img {
+    display: inline;
+    padding: 2% 6%;
+    width: 300px;
+    height: 300px;
+    position: sticky;
+    top: 0%;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+@media screen and (max-width:900px) {
+    .nav-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+div.links {
+    list-style-type: none;
+    position: sticky;
+    top: 0%;
+    float: right;
+    margin-top: 60px;
+    padding: 10px;
+}
+@media screen and (max-width:600px){
+   div.links {
+        display: block;
+        float: right;
+    }
+}
+div.links li {
+    display: inline;
+    margin-right: 10px;
+} 
+.links ul {
+    display: inline;
+}
+li a {
+    top: 0%;
+    color:white;
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+}
+li a:link {
+    text-decoration: none;
+}
+li a:visited {
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+    color: gold;
+    width: 0%;
+    transition: 0.5s;
+}
+li a:hover::after {
+    width: 100%;
+}
+li a:active {
+    text-decoration: underline;
+    color: red;
+    background-color: black;
+}
+#text-box {
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#text-box h1{
+    font-size: 62px;
+    cursor: pointer;
+}
+#text-box p{
+    margin: 10px 0 48px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.vb {
+    display: inline-block;
+    text-decoration: none;
+    color: darkturquoise;
+    border: 6px solid darkturquoise;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.vb:hover{
+    border: 6px solid gold;
+    color: black;
+    transition: 1s;
+    background-color: white;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width: 900px){
+    #text-box h1{
+        font-size: 20px;
+    }
+    
+}
+/*-----comtent----*/
+#mid-bar {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+#mid-bar h1 {
+    font-size: 36px;
+}
+#mid-bar p {
+    color: darkturquoise;
+    font-size: 20px;
+    padding: 10px;
+}
+.row {
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-between;
+}
+.menu {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    background:lightblue;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.menu:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+#forms {
+    margin: 60px 100px;
+    padding: 40px;
+    border: 2px solid darkturquoise;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: auto;
+}
+#forms:hover {
+    box-shadow: 5px 5px 5px rgba(222,222,222,0.5);
+}
+.menuimage h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+/*facilities*/
+#facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 3px solid aqua;
+    background-color: aliceblue;
+}
+.facilities-col:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+    height: 450px;
+    cursor: pointer;00
+}
+.contact {
+    border-top: 1px solid aqua;
+}
+.contact-details {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: ghostwhite;
+}
+/*----footer----*/
+.footer h1 {
+   font-size: 40px;
+   display: flex;
+   flex-direction: column;
+}
+.footer {
+    border-top: 1px solid aqua;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#name {
+    border-radius: 3px;
+    width: 25%;
+    background-color: white;
+    border-color: aqua;
+    margin-left: 35%;
+}
+#number {
+    border-radius: 3px;
+    width: 25%;
+    background-color: white;
+    border-color: aqua;
+    margin-left: 35%;
+}
+#mail {
+    border-radius: 3px;
+    width: 25%;
+    background-color: white;
+    border-color: aqua;
+    margin-left: 35%;
+}
+.btn {
+    padding: 5px;
+    background-color: white;
+    color: gold;
+    width: 10%;
+    border-color: aqua;
+    margin-left: 43%;
+}
+.footlogo {
+    display: flex;
+    position: relative;
+    justify-content:right;
+    align-items:end;
+    flex-direction: column;
+    margin: 0%;
+}
+
+/*--------menupic.........*/
+#menupic-1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./sf\ menu\ i.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    color: gold;
+    cursor: pointer;
+}
+.in-menu {
+    padding-top: 5%;
+}
+.menutext {
+    padding: 2%;
+    margin-left: 50%;
+} 
+@media(max-width: 700px){
+    .menutext {
+        margin-left: 10%;
+    }
+}  
+#menupic-2 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./sf\ menu\ C.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    color: rgb(255, 0, 0);
+    cursor: pointer; 
+}
+#menupic-3 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./sf\ menu\ A.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    color: orangered;
+    cursor: pointer; 
+}
+    
